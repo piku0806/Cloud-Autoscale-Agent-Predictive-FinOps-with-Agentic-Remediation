@@ -1,14 +1,15 @@
 # Cloud Autoscale Agent — Predictive FinOps with Agentic Remediation
 
-A machine learning system that predicts whether a cloud VM needs to **scale up**, **scale down**, or take **no action**, wrapped in a lightweight autonomous agent that decides whether to act automatically, log the event, or escalate to a human — with every decision logged and explained.
+A machine learning system that predicts whether a cloud VM needs to **scale up**, **scale down**, or take **no action**, wrapped in a lightweight autonomous agent that decides whether to act automatically, log the event, or escalate to a human  with every decision logged and explained.
 
-This project sits at the intersection of **FinOps** (cloud cost management) and **agentic AI**: it doesn't just predict — it *acts*, within guardrails.
+This project sits at the intersection of **FinOps** (cloud cost management) and **agentic AI**: 
+It doesn't just predict , it *acts*, within guardrails.
 
 ---
 
 ## Why this exists
 
-Most cloud cost/scaling ML demos stop at "here's a model and its accuracy." This project goes one step further and asks: *what happens after the prediction?* In a real FinOps setting, a model's output is only useful if something acts on it — safely, explainably, and with a human in the loop when the stakes are high.
+Most cloud cost/scaling ML demos stop at "here's a model and its accuracy." This project goes one step further and asks: *what happens after the prediction?* In a real FinOps setting, a model's output is only useful if something acts on it , safely, explainably, and with a human in the loop when the stakes are high.
 
 ## Architecture
 
@@ -38,7 +39,7 @@ Most cloud cost/scaling ML demos stop at "here's a model and its accuracy." This
 | `latency_ms`, `throughput`, `cost`, `utilization` | Performance and cost metrics |
 | `target` | Label: `scale_up` / `scale_down` / `no_action` |
 
-> **Note:** This is a synthetic/demo dataset. The near-perfect model accuracy below reflects that the labels are likely rule-derived from the input features rather than messy real-world ops decisions — expect lower accuracy and heavier feature engineering (rolling windows, rate-of-change features) on real production telemetry.
+> **Note:** This is a synthetic/demo dataset. The near-perfect model accuracy below reflects that the labels are likely rule-derived from the input features rather than messy real-world ops decisions , expect lower accuracy and heavier feature engineering (rolling windows, rate-of-change features) on real production telemetry.
 
 ## What's inside
 
