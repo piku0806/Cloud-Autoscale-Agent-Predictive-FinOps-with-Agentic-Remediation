@@ -1,0 +1,11 @@
+timestamp,vm_type,cloud_provider,predicted_action,confidence,decision,rationale
+2024-01-03 07:40:00,B1s,Azure,scale_down,0.679,ESCALATE_TO_HUMAN,Predicted 'scale_down' but confidence 68% is below the 75% auto-act threshold.
+2024-01-03 16:50:00,B1s,AWS,no_action,0.972,NO_OP,Model confidence 97%; system nominal.
+2024-01-01 12:05:00,n1-standard-1,Azure,no_action,0.984,NO_OP,Model confidence 98%; system nominal.
+2024-01-02 11:35:00,B1s,GCP,no_action,0.977,NO_OP,Model confidence 98%; system nominal.
+2024-01-03 16:10:00,t2.micro,AWS,scale_up,0.996,AUTO_EXECUTE:scale_up,Confidence 100% clears threshold and guardrails passed.
+2024-01-02 00:50:00,B1s,AWS,no_action,0.987,NO_OP,Model confidence 99%; system nominal.
+2024-01-04 04:40:00,n1-standard-1,AWS,no_action,0.983,NO_OP,Model confidence 98%; system nominal.
+2024-01-01 19:45:00,n1-standard-1,AWS,no_action,0.918,NO_OP,Model confidence 92%; system nominal.
+2024-01-04 00:05:00,B1s,Azure,scale_down,0.852,AUTO_EXECUTE:scale_down,Confidence 85% clears threshold and guardrails passed.
+2024-01-01 10:50:00,t2.micro,Azure,no_action,0.968,NO_OP,Model confidence 97%; system nominal.
